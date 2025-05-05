@@ -66,11 +66,33 @@ Authentication in Express.js refers to the process of verifying the identity of 
 </ul>
 
 
-
-
-
 <h4>Cons:</h4>
 <ul>
   <li>Tokens can't be invalidated easily before expiration (unless using blacklists).</li>
 <li>If compromised, tokens can be used until they expire.</li>
 </ul>
+
+
+<h2>1. bcryptjs:</h2>
+Used to hash and compare passwords securely. It helps store passwords safely in the database by converting them into an unreadable format.<br>
+🔐 Example: Hash user passwords before saving to MongoDB.
+
+<h2>2. body-parser:</h2>
+Middleware that parses incoming request bodies (e.g., JSON or form data) and makes them accessible under req.body.<br>
+📥 Useful for handling POST/PUT requests where data is submitted via forms or APIs.
+
+<h2>3. ejs:</h2>
+A simple templating engine that allows you to embed JavaScript into HTML pages.<br>
+🖼️ Used to render dynamic content on web pages (like user names, messages, etc.).
+
+<h2>4. jsonwebtoken:</h2>
+Generates and verifies JWTs (JSON Web Tokens), which are used for stateless user authentication.<br>
+🔐 Used in login systems to send a token back to the client, which is then sent on each request for authorization.
+
+<h2>5. mongoose:</h2>
+An ODM (Object Data Modeling) library for MongoDB and Node.js.<br>
+🛢️ Allows you to define schemas, models, and interact with MongoDB in an organized way.
+
+<h2>7. nodemon:</h2>
+A development tool that automatically restarts the server when file changes are detected.<br>
+🚀 Speeds up development by removing the need to manually restart the server.
