@@ -96,3 +96,38 @@ An ODM (Object Data Modeling) library for MongoDB and Node.js.<br>
 <h2>7. nodemon:</h2>
 A development tool that automatically restarts the server when file changes are detected.<br>
 🚀 Speeds up development by removing the need to manually restart the server.
+
+<h1>🛡️ Authorization:</h1>
+Authorization is the process of verifying what a user is allowed to do.<br>
+Think: "What are you allowed to access or do?"<br>
+<h4>Examples:</h4>
+Checking if a user can access an admin panel<br>
+Limiting a free-tier user from accessing premium features<br>
+Role-based permissions (admin vs user)
+
+<h2>✅ Summary Table:</h2>
+<table>
+ <tr>
+  <th>Feature</th>
+   <th>Authentication	</th>
+    <th>Authorization</th>
+ </tr>
+ <tr>
+  <td>Purpose</td>
+  <td>Verifies identity	</td>
+   <td>Verifies permissions</td></tr>
+ </tr>
+  <tr>
+ <td>Happens first?	</td>
+   <td>✅ Yes	</td>
+     <td>🚫 No (comes after authentication)</td>
+ </tr>
+
+ <tr>
+  <td>Example</td>
+   <td>Login with credentials	</td>
+    <td>Accessing specific dashboard area</td>
+ </tr>
+</table>
+
+
